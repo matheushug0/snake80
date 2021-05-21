@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+body {
+    margin-top: 0em;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background: linear-gradient(#95998A,#353631 100%) no-repeat;
+
+    width: 100%;
+    height: 100vh;
+
+    overflow: hidden;
+    
+    font-family: 'PT Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header i {
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+    margin-left: 0.2em;
+
+    color: rgb(255, 255, 255);
+    transform: rotate(20deg);
+}
+
+
+.canvas {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+canvas{
+    border-radius: 0.5em;
+
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    color: rgb(156, 15, 15);
+    font-size: 5em;
+
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+
+    text-shadow: 1px 8px 15px rgb(236, 89, 89);
+
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    font-size: 3em;
+    font-weight: 800;
+
+    margin: 0;
+    margin-bottom: 0.3em;
+}
+
+a {
+    border-style: none;
+    text-decoration: none;
+
+    color: black;
+
+    background-color: white;
+    padding: 1em 2em;
+
+    margin-bottom: 2em;
+    border-radius: 2em;
+
+    font-size: 1.5em;
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+a:hover {
+    filter: invert();
+    transition: 0.2s;
+}
+
+.modal {
+    visibility: hidden;
+
+    position: fixed;
+
+    width: 60%;
+    height: 60%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background: linear-gradient(#A9B6CC, rgb(63, 65, 58) 100%);
+
+    border-radius: 1em;
+}
+
+.modal.active {
+
+    visibility: visible;
+
+}
