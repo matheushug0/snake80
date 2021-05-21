@@ -26,21 +26,32 @@ header {
 }
 
 header i {
-    font-size: 2.5em;
+    font-size: 2.8em;
     margin-bottom: 0.3em;
-    margin-left: 0.2em;
+    margin-left: 0.1em;
 
     color: rgb(255, 255, 255);
-    transform: rotate(20deg);
+    transform: rotate(25deg);
+
+    text-shadow: 5px 5px 15px #030303;
+}
+
+header h2 {
+    color: white;
+    font-size: 3em;
+    font-weight: 800;
+
+    margin: 0;
+    margin-bottom: 0.2em;
+
+    text-shadow: 5px 5px 15px #030303;
 }
 
 
 .canvas {
-
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 canvas{
@@ -48,27 +59,20 @@ canvas{
 
     width: 100%;
     height: 100%;
+
+    box-shadow: 8px 8px 15px rgb(32, 32, 32);
 }
 
 h1 {
     color: rgb(156, 15, 15);
     font-size: 5em;
 
-    margin-top: 1em;
+    margin-top: 0.5em;
     margin-bottom: 0.2em;
 
     text-shadow: 1px 8px 15px rgb(236, 89, 89);
 
     text-align: center;
-}
-
-h2 {
-    color: white;
-    font-size: 3em;
-    font-weight: 800;
-
-    margin: 0;
-    margin-bottom: 0.3em;
 }
 
 a {
@@ -116,4 +120,94 @@ a:hover {
 
     visibility: visible;
 
+}
+
+#score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    margin-bottom: 0em;
+
+    font-size: 2em;
+    color: gold;
+}
+
+#stars #middle {
+    font-size: 1.7em;
+    margin-bottom: 0.3em;
+}
+
+#count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    margin-bottom: 0em;
+}
+
+#count #points {
+    margin-left: 0.2em;
+}
+
+#count h2 {
+    font-size: 3em;
+    font-weight: 800;
+    color: white;
+
+    margin: 0;
+    margin-bottom: 0.2em;
+}
+
+hr {
+    width: 50%;
+    opacity: 0.2;
+
+    margin-top: 1em;
+    margin-bottom: 0em;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+footer:hover{
+    opacity: 1;
+    transition: 0.3s;
+}
+
+footer a{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    margin-bottom: 0em;
+    padding: 0;
+    border-radius: 0.3em;
+
+    margin-left: 0.2em;
+}
+
+footer img {
+    width: 1.5em;
+
+    border-radius: 0.3em;
 }

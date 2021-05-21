@@ -15,11 +15,6 @@ let food = {
     y: Math.floor(Math.random() * 15 + 1) * box
 }
 
-let poison = {
-    x: Math.floor(Math.random() * 15 + 1) * box,
-    y: Math.floor(Math.random() * 15 + 1) * box
-}
-
 function createBg(){
     context.fillStyle = '#FFEC67'
     context.fillRect(0,0,16 * box, 16 * box)
@@ -28,7 +23,7 @@ function createBg(){
 function evokeSnake(){
     for(let i = 0; i < snake.length; i++){
         context.fillStyle = "#161616"
-        context.fillRect(snake[i].x, snake[i].y, box, box)
+        context.fillRect(snake[i].x, snake[i].y, box -1, box -1)
     }
 }
 
@@ -37,10 +32,6 @@ function drawFood(){
     context.fillRect(food.x, food.y, box, box)
 }
 
-function drawPoison(){
-    context.fillStyle = "green"
-    context.fillRect(poison.x, poison.y, box, box)
-}
 
 function update(event){
     if(event.keyCode == 37 && direction != 'right') {direction = 'left'}
@@ -50,10 +41,16 @@ function update(event){
 }
 
 document.addEventListener('keydown', update)
+let points = 0
 
 let modal = document.querySelector('.modal')
 function openModal() {
     modal.classList.add("active")
+}
+
+let pointsCount = document.querySelector("#points")
+function countPoints(){
+    pointsCount.innerHTML = points
 }
 
 
@@ -64,10 +61,11 @@ function runGame(){
     if(snake[0].y > 15 * box && direction == 'down') {snake[0].y = 0}
     if(snake[0].y < 0 * box && direction == 'up') {snake[0].y = 16 * box}
 
-    for(i =1; i < snake.length; i++){
+    for(i = 1; i < snake.length; i++){
         if(snake[0].x == snake[i].x && snake[0].y == snake[i].y){
             clearInterval(gameInterval)
 
+            countPoints()
             openModal()
         }
     }
@@ -90,14 +88,8 @@ function runGame(){
     }else{
         food.x = Math.floor(Math.random() * 15 + 1) * box
         food.y = Math.floor(Math.random() * 15 + 1) * box
-    }
-    
-    if(snakeX != poison.x || snakeY != poison.y){
-        
-    }else{
 
-        poison.x = Math.floor(Math.random() * 15 + 1) * box
-        poison.y = Math.floor(Math.random() * 15 + 1) * box
+        points++
     }
 
 
@@ -106,7 +98,7 @@ function runGame(){
         y: snakeY
     }
 
-    snake.unshift(newHead)
+   snake.unshift(newHead)
 }
 
 
