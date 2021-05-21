@@ -34,14 +34,17 @@ function drawFood(){
 
 
 function update(event){
-    if(event.keyCode == 37 && direction != 'right') {direction = 'left'}
-    if(event.keyCode == 38 && direction != 'down') {direction = 'up'}
-    if(event.keyCode == 39 && direction != 'left') {direction = 'right'}
-    if(event.keyCode == 40 && direction != 'up') {direction = 'down'}
+    if(event.keyCode == 37 || event.keyCode == 65 && direction != 'right') {direction = 'left'}
+    if(event.keyCode == 38 || event.keyCode == 87 && direction != 'down') {direction = 'up'}
+    if(event.keyCode == 39 || event.keyCode == 68 && direction != 'left') {direction = 'right'}
+    if(event.keyCode == 40 || event.keyCode == 83 && direction != 'up') {direction = 'down'}
 }
 
 document.addEventListener('keydown', update)
 let points = 0
+
+
+document.addEventListener('keydown', function(event){console.log(event)})
 
 let modal = document.querySelector('.modal')
 function openModal() {
