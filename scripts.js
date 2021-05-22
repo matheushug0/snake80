@@ -16,7 +16,7 @@ let food = {
 }
 
 function createBg(){
-    context.fillStyle = '#FFEC67'
+    context.fillStyle = '#F2E527'
     context.fillRect(0,0,16 * box, 16 * box)
 }
 
@@ -28,7 +28,7 @@ function evokeSnake(){
 }
 
 function drawFood(){
-    context.fillStyle = "red"
+    context.fillStyle = "#D93030"
     context.fillRect(food.x, food.y, box, box)
 }
 

@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
+:root {
+    --dark-red: #400118;
+    --yellow: #F2E527;
+    --red: #A62121;
+    --light-red: #D93030;
+    --black: #161616;
+}
+
 body {
     margin-top: 0em;
     padding: 0;
@@ -10,7 +18,7 @@ body {
     justify-content: center;
     flex-direction: column;
 
-    background: linear-gradient(#95998A,#353631 100%) no-repeat;
+    background: linear-gradient(var(--light-red),var(--light-red) 100%) no-repeat;
 
     width: 100%;
     height: 100vh;
@@ -65,13 +73,13 @@ canvas{
 }
 
 h1 {
-    color: rgb(156, 15, 15);
+    color: #F2F2F2;
     font-size: 5em;
 
     margin-top: 0.5em;
     margin-bottom: 0.2em;
 
-    text-shadow: 1px 8px 15px rgb(236, 89, 89);
+    text-shadow: 1px 8px 15px var(--light-red);
 
     text-align: center;
 }
@@ -104,7 +112,7 @@ a:hover {
 
     position: fixed;
 
-    width: 60%;
+    width: 50%;
     height: 60%;
 
     display: flex;
@@ -112,9 +120,11 @@ a:hover {
     justify-content: center;
     flex-direction: column;
 
-    background: linear-gradient(#A9B6CC, rgb(63, 65, 58) 100%);
+    background: linear-gradient(var(--dark-red), var(--dark-red) 100%);
 
     border-radius: 1em;
+
+    box-shadow: 8px 8px 15px rgba(32, 32, 32, 0.596);
 }
 
 .modal.active {
