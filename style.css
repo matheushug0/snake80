@@ -219,7 +219,7 @@ footer img {
     margin-top: -4em;
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width:1000px){
     canvas{
         width: 85%;
     }
@@ -293,3 +293,79 @@ footer img {
         margin-left: 1em;
     }       
 }
+
+@media screen and (max-width:414px){
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .controls {
+        top: 12.5em;
+    }
+}
+
+@media screen and (max-width:411px){
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .controls {
+        top: 12.5em;
+    }
+}
+
+@media screen and (max-width:375px){
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .controls {
+        top: 11.5em;
+        left: -6.3em;
+    }
+}
+
+@media screen and (max-height:812px) and (max-width:375px){
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .controls {
+        top: 16.2em;
+        left: -6.3em;
+    }
+}
+
+@media screen and (max-width:360px){
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .controls {
+        top: 11em;
+    }
+}
+
+@media screen and (max-width:320px){
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .controls {
+        top: 9.8em;
+        left: -6.3em;
+    }
+}
+
