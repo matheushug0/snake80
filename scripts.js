@@ -120,4 +120,4 @@ function runGame(){
 }
 
 
-let gameInterval = setInterval(runGame, 100)
+let gameInterval = setInterval(runGame, 110)
