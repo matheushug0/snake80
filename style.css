@@ -243,19 +243,18 @@ footer img {
     }
 
     footer {
-        margin-top: 14em;
+        margin-top: 20em;
         font-size: 0.6em;
 
-        margin-left: 30em;
+        margin-left: 24em;
     }
     
     .controls {
         position: absolute;
-        bottom: 1em;
-        left: 2em;
+        bottom: 0;
+        left: center;
+        
     
-        margin-left: 5em;
-
         visibility: visible;
 
         background-color: rgba(255, 255, 255, 0.281);
@@ -326,7 +325,7 @@ footer img {
 }
 
 
-@media screen and (max-width:414px){
+/* @media screen and (max-width:414px){
 
     body {
         padding: 0;
@@ -353,8 +352,8 @@ footer img {
 @media screen and (max-width:411px){
 
     .controls {
-        bottom: 4em;
-        left: 1em;
+        bottom: 0em;
+        left: 0em;
     }
 
 }
@@ -384,5 +383,5 @@ footer img {
         left: -1em;
     }
 
-}
+} */
 
