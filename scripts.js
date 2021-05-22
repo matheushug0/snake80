@@ -56,6 +56,21 @@ function countPoints(){
     pointsCount.innerHTML = points
 }
 
+// Mobile Controls
+
+let upIcon = document.querySelector("#upIcon")
+upIcon.addEventListener('click', function(){direction = 'up'})
+
+let downIcon = document.querySelector("#downIcon")
+downIcon.addEventListener('click', function(){direction = 'down'})
+
+let leftIcon = document.querySelector("#leftIcon")
+leftIcon.addEventListener('click', function(){direction = 'left'})
+
+let rightIcon = document.querySelector("#rightIcon")
+rightIcon.addEventListener('click', function(){direction = 'right'})
+
+
 
 function runGame(){
 
