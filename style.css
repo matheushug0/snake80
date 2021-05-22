@@ -251,7 +251,7 @@ footer img {
     
     .controls {
         position: absolute;
-        bottom: 10em;
+        bottom: 1em;
         left: 2em;
     
         margin-left: 5em;
@@ -338,8 +338,8 @@ footer img {
     }
 
     .controls {
-        bottom: 3em;
-        left: 1em;
+        bottom: 0em;
+        left: 0em;
     }
 
     .modal {
