@@ -42,6 +42,7 @@ function update(event){
 
 document.addEventListener('keydown', update)
 let points = 0
+let n = 0
 
 
 document.addEventListener('keydown', function(event){console.log(event)})
@@ -108,6 +109,7 @@ function runGame(){
         food.y = Math.floor(Math.random() * 15 + 1) * box
 
         points++
+        n++
     }
 
 
@@ -120,4 +122,4 @@ function runGame(){
 }
 
 
-let gameInterval = setInterval(runGame, 110)
+let gameInterval = setInterval(runGame, 150 - n)
