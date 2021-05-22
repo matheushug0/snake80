@@ -251,7 +251,7 @@ footer img {
     
     .controls {
         position: absolute;
-        bottom: 1em;
+        bottom: 0em;
         left: 2em;
     
         margin-left: 5em;
