@@ -3,7 +3,9 @@
 - Projeto desenvolvido no bootcamp "HTML Web Developer" da @digitalinnovationone
 
 ## Updates
--   Controles A, W, S, D -- ou -- Setas direcionais
+-   Controles A, W, S, D funcionando tanto quanto as setas direcionais
+-   Controles de direção com o touch >> Mobile
+-   Aumento de velocidade gradativo (a cada ponto = acréscimo de 2ms)
 
 # Preview
 https://snake80-matheushug0.vercel.app/
