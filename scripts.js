@@ -42,10 +42,8 @@ function update(event){
 
 document.addEventListener('keydown', update)
 let points = 0
-let n = 0
+let n = 150
 
-
-document.addEventListener('keydown', function(event){console.log(event)})
 
 let modal = document.querySelector('.modal')
 function openModal() {
@@ -109,7 +107,10 @@ function runGame(){
         food.y = Math.floor(Math.random() * 15 + 1) * box
 
         points++
-        n++
+        n--
+        n--
+
+        console.log(n)
     }
 
 
@@ -122,4 +123,4 @@ function runGame(){
 }
 
 
-let gameInterval = setInterval(runGame, 180 - n)
+let gameInterval = setInterval(runGame, n)
