@@ -3,6 +3,7 @@
 body {
     margin-top: 0em;
     padding: 0;
+    margin: 0;
 
     display: flex;
     align-items: center;
@@ -221,6 +222,12 @@ footer img {
 
 @media screen and (max-width:1000px){
 
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
     header {
         font-size: 0.4em;
     }
@@ -233,13 +240,13 @@ footer img {
         margin-top: 14em;
         font-size: 0.6em;
 
-        margin-left: 35em;
+        margin-left: 30em;
     }
     
     .controls {
         position: absolute;
-        bottom: 1.5em;
-        left: 6.5em;
+        bottom: 4.5em;
+        left: 3em;
     
         margin-left: 5em;
 
@@ -338,47 +345,45 @@ footer img {
 
 @media screen and (max-width:411px){
 
-    body {
-        padding: 0;
-        margin: 0;
+    .controls {
+        bottom: 2em;
+        left: 3em;
     }
 
 }
 
 @media screen and (max-width:375px){
 
-    body {
-        padding: 0;
-        margin: 0;
+    .controls {
+        bottom: 3em;
+        left: 2em;
     }
-
 
 }
 
 @media screen and (max-height:812px) and (max-width:375px){
 
-    body {
-        padding: 0;
-        margin: 0;
+    .controls {
+        bottom: 10em;
+        left: 2em;
     }
 
 }
 
 @media screen and (max-width:360px){
 
-    body {
-        padding: 0;
-        margin: 0;
+    .controls {
+        bottom: 5em;
+        left: 2em;
     }
-
 
 }
 
 @media screen and (max-width:320px){
 
-    body {
-        padding: 0;
-        margin: 0;
+    .controls {
+        bottom: 4em;
+        left: 0em;
     }
 
 }
